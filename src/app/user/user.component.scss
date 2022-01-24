@@ -1,0 +1,91 @@
+.Posts {
+  padding: 30px;
+
+  .Header {
+    font-size: 30px;
+    margin: 10px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .Paginator {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  .mat-elevation-z8 {
+    box-shadow: unset;
+    width: 100%;
+    overflow-y: auto;
+    height: calc(100vh - 295px);
+
+    table {
+      width: 100%;
+      text-align: center !important;
+      min-width: 700px;
+      overflow: scroll;
+      font-family: "Century Gothic",
+        CenturyGothic,
+        AppleGothic,
+        sans - serif !important;
+
+      th.mat-sort-header-sorted {
+        font-family: "Century Gothic",
+          CenturyGothic,
+          AppleGothic,
+          sans - serif !important;
+        text-align: center !important;
+      }
+
+      .Actions {
+        i {
+          cursor: pointer;
+          padding: 0 5px;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.AddEntry {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 55px;
+  height: 55px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #734500;
+  ;
+  cursor: pointer;
+
+  i {
+    font-size: 24px;
+    color: #734500;
+    ;
+  }
+}
+
+::ng-deep .Posts .mat-sort-header-container {
+  justify-content: center !important;
+}
+
+::ng-deep .Posts td.mat-cell,
+td.mat-footer-cell,
+th.mat-header-cell {
+  text-align: center;
+}

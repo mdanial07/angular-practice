@@ -1,0 +1,25 @@
+<div class="addUser">
+    <div class="Heading">
+        <span>Add Post</span>
+    </div>
+    <div class="Form">
+        <form [formGroup]="addpost" (ngSubmit)="Submit()">
+            <mat-form-field class="col-md-12">
+                <input matInput placeholder="User Id" formControlName="userId">
+            </mat-form-field>
+
+            <mat-form-field class="col-md-12">
+                <input matInput placeholder="Title" formControlName="title">
+            </mat-form-field>
+
+            <mat-form-field class="col-md-12">
+                <mat-label>Description (optional)</mat-label>
+                <textarea matInput formControlName="body"></textarea>
+            </mat-form-field>
+
+            <div class="Buttons">
+                <button type="submit" mat-raised-button color="primary" [disabled]="spinner"> Submit </button>
+            </div>
+        </form>
+    </div>
+</div>
